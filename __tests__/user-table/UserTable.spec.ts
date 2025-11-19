@@ -2,7 +2,8 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { flushPromises, mount, VueWrapper } from '@vue/test-utils'
 import UserTable from '@/components/user-table/UserTable.vue';
 
-// Написал тесты перед рефакторингом, не должно быть все в одном файле и опираться на css класы
+// Добавил тесты перед рефакторингом
+// Не должно быть все в одном файле и опираться на css классы
 describe('UserTable', () => {
   let wrapper: VueWrapper;
 

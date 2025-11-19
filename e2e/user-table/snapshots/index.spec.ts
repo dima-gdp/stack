@@ -3,6 +3,7 @@ import { test, expect } from '@playwright/test'
 const MATH_RANDOM_MOCK_VALUE = 0.124
 
 // Добавил снапшоты чтобы не отломить стили
+// Лучше добавить запуск из докера, так как на разных ОС будут отличаться
 test.describe('UserTable snapshots', () => {
   test('Should take a snapshot of UserTable', async ({ page }) => {
     await page.addInitScript((value) => {
